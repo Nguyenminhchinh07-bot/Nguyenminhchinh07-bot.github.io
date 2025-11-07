@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Học menu đa cấp và bộ chọn ID, Class</title>
+    <link rel="stylesheet" href="baitap.css">
+</head>
+<body>
+    <!-- khối header -->
+    <div id="header">
+        <h1>Học Class và ID</h1>
+        <p>Kết hợp sử dụng menu đa cấp</p>
+    </div>
+
+    <!-- khối menu -->
+    <div id="menu">
+        <ul id="menu-1">
+            <li><a href="">Trang chủ</a></li>
+            <li>
+                <a href="">Sản phẩm</a>
+                <ul id="menu-2">
+                    <li>
+                        <a href="">Điện thoại</a>
+                        <ul id="menu-3">
+                            <li><a href="">oppo</a></li>
+                            <li><a href="">nokia</a></li>
+                            <li><a href="">xiaomi</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Laptop</a>
+                        <ul id="menu-3">
+                            <li><a href="">DELL</a></li>
+                            <li><a href="">MSI</a></li>
+                            <li><a href="">lennovo</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Phụ kiện</a>
+                        <ul id="menu-3">
+                            <li><a href="">Tai nghe</a></li>
+                            <li><a href="">Sạc</a></li>
+                            <li><a href="">Ốp</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="">Dịch vụ</a></li>
+            <li><a href="">Tin tức</a></li>
+            <li><a href="">Liên hệ</a></li>
+        </ul>
+    </div>
+    <!-- khối tạo nội dung -->
+    <div id="main">
+        <div id="content" class="box">
+            <h2>Nội dung trang web</h2>
+            <p>nội dung chính của trang web
+                Nó sử dụng <b>id="content"</b> để định vị bố cục 
+                <b>class="box"</b> để định dạng khung trắng
+            </p>
+            <p>
+                Thanh menu phía trên <b>menu đa cấp</b>
+                khi trỏ chuột vào sẽ tự động hiện ra menu con
+            </p>
+            <a href="" class="btn">Xem thêm</a>
+        </div>
+        <div id="sidebar" class="box">
+            <h2>Sidebar</h2>
+            <p>
+                Đây là phần sidebar. Cũng dùng class <b>.box</b>
+                Để có cùng phong cách với nội dung chính
+            </p>
+            <a href="" class="btn">Liên hệ</a>
+        </div>
+    </div>
+    <!-- khối footer -->
+    <div id="footer">
+        <p>&copy;2025 - Nguyễn Minh Chính</p>
+    </div>
+</body>
+</html>
